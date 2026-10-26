@@ -1,0 +1,18 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Secure Login{% endblock %}</title>
+</head>
+<body>
+    <h1>Secure Login System</h1>
+
+    {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+    {% endfor %}
+
+    {% block content %}{% endblock %}
+</body>
+</html>
